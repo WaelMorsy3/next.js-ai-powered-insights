@@ -15,7 +15,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          throw new Error("Invaild credentials");
+          throw new Error("Invalid credentials");
         }
 
         const user = await prisma.user.findUnique({
