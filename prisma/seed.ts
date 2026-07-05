@@ -1,3 +1,5 @@
+"use client";
+
 import { PrismaClient, Role, PlanType } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
